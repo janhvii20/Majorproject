@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SafeDrive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SafeDrive</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="login.html" class="btn btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <div class="container">
+            <h1>Drowsiness Detection Dashboard</h1>
+            <div class="drowsiness-info">
+                <h2>How Drowsiness Detection Works</h2>
+                <p>Our advanced system uses multiple metrics to detect drowsiness:</p>
+                <ul>
+                    <li><strong>EOR (Eye Opening Ratio):</strong> Measures the openness of the eyes.</li>
+                    <li><strong>MOR (Mouth Opening Ratio):</strong> Detects yawning and mouth movements.</li>
+                    <li><strong>NLR (Nose-Lip Ratio):</strong> Tracks facial muscle relaxation.</li>
+                </ul>
+                <p>These metrics are continuously monitored to assess the driver's alertness level.</p>
+            </div>
+            <div class="detection-animation">
+                <h2>Drowsiness Detection in Action</h2>
+                <div class="video-placeholder">
+                    <p>Animated demonstration of drowsiness detection in a moving vehicle</p>
+                </div>
+            </div>
+            <div class="start-detection">
+                <h2>Start Drowsiness Detection</h2>
+                <p>Click the button below to activate your device's camera and begin real-time drowsiness detection.</p>
+                <button id="start-detection" class="btn btn-primary">Start Detection</button>
+                <div id="detection-area" class="hidden">
+                    <div class="video-container">
+                        <video id="video-feed" autoplay playsinline></video>
+                    </div>
+                    <div id="detection-output">
+                        <h3>Drowsiness Detection Status:</h3>
+                        <p id="drowsiness-status">Not started</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SafeDrive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
+

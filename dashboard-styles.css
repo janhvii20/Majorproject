@@ -1,0 +1,99 @@
+.dashboard {
+    background-color: #f0f8ff; /* Light blue background to represent alertness */
+    padding: 2rem 0;
+}
+
+.dashboard h1 {
+    color: #3b82f6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.drowsiness-info, .detection-animation, .start-detection {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.drowsiness-info h2, .detection-animation h2, .start-detection h2 {
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.drowsiness-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.drowsiness-info li {
+    margin-bottom: 0.5rem;
+}
+
+.video-placeholder {
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #4b5563;
+}
+
+#start-detection {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 1rem 0;
+    }
+
+    .drowsiness-info, .detection-animation, .start-detection {
+        padding: 1rem;
+    }
+
+    .video-placeholder {
+        height: 200px;
+    }
+}
+
+#detection-area {
+    margin-top: 2rem;
+}
+
+#detection-area.hidden {
+    display: none;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+#video-feed {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#detection-output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+}
+
+#drowsiness-status {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
